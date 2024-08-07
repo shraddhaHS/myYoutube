@@ -20,9 +20,6 @@ const generateAccessAndRefreshTokens = async (userId) => {
     throw new ApiError(500,"something went wrong while generating refresh and access token")
   }
 }
-
-
-
 const registerUser = asyncHandler(async (req,res)=> {
    //1) get user details from frontend
    //2)validation - not empty fields
